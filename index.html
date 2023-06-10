@@ -1,40 +1,149 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+	<title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/dracula.css">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>Comment écrire un bon <strong>README</strong> sur les projets GitHub</h2>
+				<img src="https://media.giphy.com/media/uOofQ5gqr9jv8x2nHS/giphy.gif" alt="i am back">
+			</section>
+			<section>
+				<h3>README mais pour quoi faire ?</h3>
+				<ol>
+					<li>Un bon projet = un fichier README détaillé.</li>
+
+					<li>Le fichier <strong>README</strong> peut servir de <em>"guide"</em> pour l'utilisateur.
+						<!-- <ul>
+							<li>une description du projet</li>
+							<li>comment installer et lancer le projet</li>
+						</ul> -->
+					</li>
+					<li>C'est essentile car c'est le <strong>premier fichier vu</strong> (affiché par GitHub) lorsqu'on
+						arrive sur le projet.</li>
+					<li>Cela aidera à nous concentrer sur ce que le projet doit livrer et comment.
+					</li>
+					<li>Peut être écrit en plus format mais nous = Markdown</li>
+				</ol>
+			</section>
+			<section>
+				<h2>Important</h2>
+				<p>
+					Il n'y a pas qu'une seule bonne façon de structurer un bon
+					README. Mais ... <br> il y a une très mauvaise façon, et c'est de ne pas inclure de README du tout.
+				</p>
+			</section>
+			<section>
+				<h2>Avant de commencer </h2>
+				<p>Le README doit répondre aux questions <strong>Quoi ?, Pourquoi ?, Comment ?</strong></p>
+				<img src="https://media.giphy.com/media/XDYIuWmMqeEKmqEfEp/giphy-downsized.gif" alt="what why who">
+			</section>
+			<section>
+				<section>
+					<h2>Qu'est ce que doit inclure le README</h2>
+					<img src="https://media.giphy.com/media/2zlSwREmLmiQw/giphy.gif" alt="doit inclure le REAMDE">
+				</section>
+				<section>
+					<ol>
+						<li>Titre du projet</li>
+						<li>Description du projet</li>
+						<li>(Optionenl) Table des matières</li>
+						<li>Comment l'installer et exéctuer le projet ?</li>
+						<li>Comment utiliser le projet ?</li>
+						<li>(Optionnel) Ajouter une licence</li>
+						<li>(Optionnnel) Badges</li>
+					</ol>
+				</section>
+				<section>
+					<h4>Exemple (faker)</h4>
+					<img src="img/readme-faker-exemple1.png" alt="exemple 1">
+				</section>
+				<section>
+					<img src="img/readme-faker-exemple2.png" alt="exemple 2">
+				</section>
+				<section>
+					<h4>Markdown</h4>
+					<pre>
+					<code>
+						# Titre du projet
+
+						blablabla description
+						Pas hésiter à mettre des schémas (rest api ?)
+
+						## 📦 Installation
+
+						```bash
+						npm install
+						ou
+						yarn
+						```
+
+						## 🪄 Usage
+
+						```bash
+						npm run start
+						ou
+						yarn dev
+						```
+
+						### Equipe back
+
+						   + Harry Potter
+						   + Hermione Granger
+
+						## Licence
+
+						Licence MIT
+						
+					</code>
+				</pre>
+				</section>
+			</section>
+			<section>
+				<h2>Conclusion</h2>
+				<ul>
+					<li>Faire un README c'est bien !</li>
+				</ul>
+				<img src="https://media.giphy.com/media/4PSEQpvV5wUpnmpP1l/giphy.gif" alt="good job">
+			</section>
+			<section>
+				<h1>Références</h1>
+				<ul>
+					<li><a href="https://www.freecodecamp.org/french/news/comment-ecrire-un-bon-fichier-readme/">(Version française) Comment écrire un bon fichier README pour votre projet GitHub</a></li>
+					<li><a href="https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/">How to Write a Good
+							README File for Your GitHub Project</a></li>
+					<li><a href="https://github.com/faker-js/faker">(GitHub) faker-js</a></li>
+				</ul>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
 </html>
